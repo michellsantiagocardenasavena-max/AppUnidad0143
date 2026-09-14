@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AppUnidad 01 4-3</string>
+    <!-- Constantes String para actividad hula mundo -->
+    <string name="strTitulo">Mi primer aplicacion</string>
+    <string name="strNombre">¿ CUAL ES TU NOMBRE ?</string>
+    <string name="strMensaje">SALIDA</string>
+    <string name="strbtnClick">DAR CLICK</string>
+    <string name="strbtnLimpiar">LIMPIAAR</string>
+    <string name="strbtnSalir">SALIR</string>
+    <string name="setMsgError">!Falto capturar informacion</string>
+    
+    <!-- String para el menu-->
+    <string name="strAlumno">Santiago Cardenas Avena</string>
+    <string name="strMatricula">2025030423</string>
+    <string name="strMateria">Programacion movil</string>
+    <string name="strHola">Hola</string>
+    <string name="strImc">IMC</string>
+    <string name="strGrados">Grados</string>
+    <string name="strMonedas">Convertidor</string>
+    <string name="strCotizacion">Cotizacion</string>
+    <string name="strPre">Pre-exam</string>
+    <string name="strExamen">Examen</string>
+    <string name="strCerrar">Cerrar</string>
+    
+
+
+
+
+
+
+</resources>
