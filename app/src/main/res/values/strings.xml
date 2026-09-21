@@ -8,7 +8,7 @@
     <string name="strbtnLimpiar">LIMPIAAR</string>
     <string name="strbtnSalir">SALIR</string>
     <string name="setMsgError">!Falto capturar informacion</string>
-    
+
     <!-- String para el menu-->
     <string name="strAlumno">Santiago Cardenas Avena</string>
     <string name="strMatricula">2025030423</string>
@@ -21,11 +21,42 @@
     <string name="strPre">Pre-exam</string>
     <string name="strExamen">Examen</string>
     <string name="strCerrar">Cerrar</string>
-    
 
+    <!-- String para IMC -->
+    <string name="strAltura">Altura Ej. 1.80 mts</string>
+    <string name="strPeso">Peso Ej. 90.5 kg</string>
+    <string name="strResultado">IMC =</string>
+    <string name="strCalcular">Calcular</string>
+    <string name="strLimpiar">Limpiar</string>
+    <string name="strSalir">Salir</string>
 
+    <!-- String para el app Monedas -->
+    <string-array name="strMonedas">
+        <item>Dolar americano</item>
+        <item>Dolar canadiese</item>
+        <item>Euros</item>
+        <item>Libras</item>
+        <item>Libras Esterlinas</item>
+    </string-array>
 
+    <string name="srtTituloMon">convertidor de Monedas</string>
+    <string name="strCantidadMon">Cantidad de pesos Mx a Convertir</string>
+    <string name="strBtnConvertir">Convertir</string>
 
+    <string name="strDolarA">17.40</string>
+    <string name="strDolarC">18.50</string>
+    <string name="strEuro">21.40</string>
+    <string name="strLibra">22.18</string>
+
+    <!--Aplicación de Grados-->
+    <string name="strTituloGrados">Convertidor de Grados</string>
+    <string name="strCel">Celcius a Fahrenheit</string>
+    <string name="strFah">Fahrenheit a Celcius</string>
+    <string name="strCantidad">Escribe la cantidad de grados</string>
+    <string name="strMensajeGrados">Faltó capturar la cantidad</string>
+    <string name="strMenSalir">¿Deseas salir de la app?</string>
+    <string name="strResultadoG">Resultado aquí</string>
+    <string name="strCalcularG">Calcular</string>
 
 
 </resources>

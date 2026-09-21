@@ -62,6 +62,19 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        crvImc.setOnClickListener {
+            val intent = Intent(this, ImcActivity2::class.java)
+            startActivity(intent)
+        }
+
+        crvMoneda.setOnClickListener {
+            val intent = Intent(this, MonedasActivity::class.java)
+            startActivity(intent)
+        }
+        crvGrados.setOnClickListener {
+            val intent = Intent(this, GradosActivity::class.java)
+            startActivity(intent)
+        }
 
         crvSalir.setOnClickListener {
 
