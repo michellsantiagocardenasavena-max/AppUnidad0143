@@ -75,6 +75,10 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, GradosActivity::class.java)
             startActivity(intent)
         }
+        crvCotizacion.setOnClickListener {
+            val intent = Intent(this, ClienteActivity::class.java)
+            startActivity(intent)
+        }
 
         crvSalir.setOnClickListener {
 

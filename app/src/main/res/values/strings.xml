@@ -5,7 +5,7 @@
     <string name="strNombre">¿ CUAL ES TU NOMBRE ?</string>
     <string name="strMensaje">SALIDA</string>
     <string name="strbtnClick">DAR CLICK</string>
-    <string name="strbtnLimpiar">LIMPIAAR</string>
+    <string name="strbtnLimpiar">Limpiar</string>
     <string name="strbtnSalir">SALIR</string>
     <string name="setMsgError">!Falto capturar informacion</string>
 
@@ -57,6 +57,29 @@
     <string name="strMenSalir">¿Deseas salir de la app?</string>
     <string name="strResultadoG">Resultado aquí</string>
     <string name="strCalcularG">Calcular</string>
+
+    <!-- Cotización -->
+
+        <string name="strEncabezado">Toyota</string>
+        <string name="strDomicilio">Av. del Mar 1200</string>
+        <string name="strLocalidad">Mazatlan, Sinaloa</string>
+        <string name="strNombreCliente">Nombre del Cliente</string>
+        <string name="strbtnIngresar">Ingresar</string>
+        <string name="strbtnRegresar">Regresar</string>
+
+
+        <string name="strnumFolio">Numero de folio</string>
+        <string name="strPLazos">Plazos</string>
+
+        <string name="str12meses">12 Meses</string>
+        <string name="str24meses">24 Meses</string>
+        <string name="str36meses">36 Meses</string>
+        <string name="str48meses">48 Meses</string>
+
+        <string name="strPagoInicial">Pago Inicial</string>
+        <string name="strTotalaFinanciar">Total a Financiar</string>
+        <string name="strMe">Pago Mensual</string>
+
 
 
 </resources>
