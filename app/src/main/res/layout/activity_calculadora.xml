@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".CalculadoraActivity">
+
+
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operaciones Aritmeticas"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="40dp" />
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="40dp" />
+
+    <!-- Número 1 -->
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe el Num1"
+        android:textColor="@color/white"
+        android:textColorHint="#DDDDDD"
+        android:textSize="18sp"
+        android:inputType="numberDecimal" />
+
+    <!-- Número 2 -->
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe el Num2"
+        android:textColor="@color/white"
+        android:textColorHint="#DDDDDD"
+        android:textSize="18sp"
+        android:inputType="numberDecimal" />
+
+    <!-- Texto del Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la operacion a realizar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp" />
+
+    <!-- Operaciones -->
+    <Spinner
+        android:id="@+id/spnOperacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="resultador"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Calcular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#7052B5" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Limpiar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#7052B5" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Regresar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#7052B5" />
+
+    </LinearLayout>
+
+</LinearLayout>

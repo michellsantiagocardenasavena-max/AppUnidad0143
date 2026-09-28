@@ -60,26 +60,35 @@
 
     <!-- Cotización -->
 
-        <string name="strEncabezado">Toyota</string>
-        <string name="strDomicilio">Av. del Mar 1200</string>
-        <string name="strLocalidad">Mazatlan, Sinaloa</string>
-        <string name="strNombreCliente">Nombre del Cliente</string>
-        <string name="strbtnIngresar">Ingresar</string>
-        <string name="strbtnRegresar">Regresar</string>
+    <string name="strEncabezado">Toyota</string>
+    <string name="strDomicilio">Av. del Mar 1200</string>
+    <string name="strLocalidad">Mazatlan, Sinaloa</string>
+    <string name="strNombreCliente">Nombre del Cliente</string>
+    <string name="strbtnIngresar">Ingresar</string>
+    <string name="strbtnRegresar">Regresar</string>
 
 
-        <string name="strnumFolio">Numero de folio</string>
-        <string name="strPLazos">Plazos</string>
+    <string name="strnumFolio">Numero de folio</string>
+    <string name="strPLazos">Plazos</string>
 
-        <string name="str12meses">12 Meses</string>
-        <string name="str24meses">24 Meses</string>
-        <string name="str36meses">36 Meses</string>
-        <string name="str48meses">48 Meses</string>
+    <string name="str12meses">12 Meses</string>
+    <string name="str24meses">24 Meses</string>
+    <string name="str36meses">36 Meses</string>
+    <string name="str48meses">48 Meses</string>
 
-        <string name="strPagoInicial">Pago Inicial</string>
-        <string name="strTotalaFinanciar">Total a Financiar</string>
-        <string name="strMe">Pago Mensual</string>
+    <string name="strPagoInicial">Pago Inicial</string>
+    <string name="strTotalaFinanciar">Total a Financiar</string>
+    <string name="strMe">Pago Mensual</string>
 
+    <!-- Pre-examen: Operaciones Aritmeticas -->
+    <string name="strEscribeNum1">Escribe el Num1</string>
+    <string name="strEscribeNum2">Escribe el Num2</string>
+    <string name="strFaltaDatos">Faltó capturar información, todos los campos son requeridos</string>
 
-
+    <string-array name="strOperaciones">
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicación</item>
+        <item>División</item>
+    </string-array>
 </resources>
