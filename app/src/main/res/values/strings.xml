@@ -91,4 +91,32 @@
         <item>Multiplicación</item>
         <item>División</item>
     </string-array>
+    <!-- Examen: Cuenta de Banco -->
+    <string name="user">admin</string>
+    <string name="pass">1234</string>
+    <string name="banco">Banco Bilbao Vizcaya Argentaria.</string>
+    <string name="domicilio">Av del Sol 34</string>
+    <string name="strUsuario">Usuario</string>
+    <string name="strContrasena">Contraseña</string>
+    <string name="strIngresarB">Ingresar</string>
+    <string name="strNumCuentaB">Numero de Cuenta</string>
+    <string name="strNombreClienteB">Nombre Cliente</string>
+    <string name="strBancoB">Banco</string>
+    <string name="strSaldoB">Saldo</string>
+    <string name="strCantidadB">Cantidad</string>
+    <string name="strRegistrarCuenta">Registrar Cuenta</string>
+    <string name="strAplicarMovimiento">Aplicar Movimiento</string>
+    <string name="strMovimientos">Movimientos</string>
+    <string name="strFaltaUsuario">Falto capturar usuario y contraseña</string>
+    <string name="strUsuarioIncorrecto">Usuario o contraseña incorrectos</string>
+    <string name="strFaltaCuenta">Falto capturar los datos de la cuenta</string>
+    <string name="strCuentaNoRegistrada">Primero debe registrar la cuenta</string>
+    <string name="strFaltaMovimiento">Falto capturar la cantidad</string>
+    <string name="strSaldoInsuficiente">Saldo insuficiente para realizar el retiro</string>
+
+    <string-array name="movimientos">
+        <item>Consultar</item>
+        <item>Retirar</item>
+        <item>Depositar</item>
+    </string-array>
 </resources>
