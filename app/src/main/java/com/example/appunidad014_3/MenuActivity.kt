@@ -17,13 +17,12 @@ class MenuActivity : AppCompatActivity() {
     private lateinit var crvGrados: CardView
     private lateinit var crvMoneda: CardView
     private lateinit var crvCotizacion: CardView
-
     private lateinit var crvPre: CardView
+    private lateinit var crvExamen: CardView
     private lateinit var crvSalir: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
 
@@ -56,58 +55,89 @@ class MenuActivity : AppCompatActivity() {
         crvMoneda = findViewById(R.id.crvMoneda)
         crvCotizacion = findViewById(R.id.crvCotizacion)
         crvPre = findViewById(R.id.crvPre)
-
+        crvExamen = findViewById(R.id.crvExamen)
         crvSalir = findViewById(R.id.crvSalir)
     }
 
     private fun eventosClick() {
 
         crvHola.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+
+            val intent =
+                Intent(this, MainActivity::class.java)
+
             startActivity(intent)
         }
+
         crvImc.setOnClickListener {
-            val intent = Intent(this, ImcActivity2::class.java)
+
+            val intent =
+                Intent(this, ImcActivity2::class.java)
+
+            startActivity(intent)
+        }
+
+        crvGrados.setOnClickListener {
+
+            val intent =
+                Intent(this, GradosActivity::class.java)
+
             startActivity(intent)
         }
 
         crvMoneda.setOnClickListener {
-            val intent = Intent(this, MonedasActivity::class.java)
+
+            val intent =
+                Intent(this, MonedasActivity::class.java)
+
             startActivity(intent)
         }
-        crvGrados.setOnClickListener {
-            val intent = Intent(this, GradosActivity::class.java)
-            startActivity(intent)
-        }
+
         crvCotizacion.setOnClickListener {
-            val intent = Intent(this, ClienteActivity::class.java)
-            startActivity(intent)
-        }
-        crvCotizacion.setOnClickListener {
-            val intent = Intent(this, ClienteActivity::class.java)
+
+            val intent =
+                Intent(this, ClienteActivity::class.java)
+
             startActivity(intent)
         }
 
         crvPre.setOnClickListener {
-            val intent = Intent(this, PreActivity::class.java)
+
+            val intent =
+                Intent(this, PreActivity::class.java)
+
             startActivity(intent)
         }
 
+        crvExamen.setOnClickListener {
 
+            val intent =
+                Intent(this, BancoActivity::class.java)
+
+            startActivity(intent)
+        }
 
         crvSalir.setOnClickListener {
 
-            val builder = AlertDialog.Builder(this)
+            val builder =
+                AlertDialog.Builder(this)
 
             builder.setTitle("App Unidad 01")
-            builder.setMessage("¿Desea salir de la app?")
 
-            builder.setPositiveButton("Aceptar") { _, _ ->
+            builder.setMessage(
+                "¿Desea salir de la app?"
+            )
+
+            builder.setPositiveButton(
+                "Aceptar"
+            ) { dialog, which ->
+
                 finish()
             }
 
-            builder.setNegativeButton("Cancelar") { dialog, _ ->
-                dialog.dismiss()
+            builder.setNegativeButton(
+                "Cancelar"
+            ) { dialog, which ->
 
                 Toast.makeText(
                     this,

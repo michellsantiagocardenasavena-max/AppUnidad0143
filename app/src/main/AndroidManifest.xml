@@ -54,11 +54,12 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".CuentabancoActivity"
+            android:name=".BancoActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
-            android:name=".BancoActivity"
+            android:name=".CuentaBancoActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

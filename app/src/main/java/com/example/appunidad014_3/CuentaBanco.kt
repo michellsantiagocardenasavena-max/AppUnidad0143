@@ -1,8 +1,6 @@
 package com.example.appunidad014_3
 
-import java.io.Serializable
-
-class CuentaBanco : Serializable {
+class CuentaBanco {
 
     var numCuenta: String = ""
     var nombre: String = ""
@@ -10,18 +8,32 @@ class CuentaBanco : Serializable {
     var saldo: Float = 0.0f
 
     fun obtenerSaldo(): Float {
+
         return saldo
     }
 
-    fun retirarDinero(cantidad: Float): Boolean {
-        if (cantidad <= saldo) {
-            saldo -= cantidad
+    fun retirarDinero(
+        cantidad: Float
+    ): Boolean {
+
+        if (
+            cantidad <= saldo
+        ) {
+
+            saldo =
+                saldo - cantidad
+
             return true
         }
+
         return false
     }
 
-    fun hacerDeposito(cantidad: Float) {
-        saldo += cantidad
+    fun hacerDeposito(
+        cantidad: Float
+    ) {
+
+        saldo =
+            saldo + cantidad
     }
 }

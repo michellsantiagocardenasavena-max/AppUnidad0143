@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,74 +10,106 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="15dp">
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="15dp">
 
         <TextView
             android:id="@+id/lblNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Usuario :"
-            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:paddingBottom="10dp"/>
+            android:paddingBottom="10dp">
+        </TextView>
 
         <EditText
             android:id="@+id/txtNumCuenta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:hint="@string/strNumCuentaB"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:textSize="14sp">
+        </EditText>
 
         <EditText
             android:id="@+id/txtNombre"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:hint="@string/strNombreClienteB"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:textSize="14sp">
+        </EditText>
 
         <EditText
             android:id="@+id/txtBanco"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:hint="@string/strBancoB"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:textSize="14sp">
+        </EditText>
 
         <EditText
             android:id="@+id/txtSaldo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:hint="@string/strSaldoB"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+            android:textSize="14sp">
+        </EditText>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/strMovimientos"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:textAlignment="center"
-            android:paddingTop="15dp"
-            android:paddingBottom="5dp"/>
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp">
+        </TextView>
 
         <Spinner
             android:id="@+id/spnMovimientos"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="45dp">
+        </Spinner>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/strCantidadB"
+            android:text="Nuevo Saldo $"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:paddingTop="15dp"
-            android:paddingBottom="5dp"/>
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtNuevoSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp">
+        </TextView>
 
         <EditText
             android:id="@+id/txtCantidad"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+            android:layout_height="40dp"
+            android:hint="@string/strCantidadB"
+            android:inputType="numberDecimal"
+            android:textSize="14sp">
+        </EditText>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,14 +122,18 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/strRegistrarCuenta"/>
+                android:text="@string/strRegistrarCuenta"
+                android:textSize="11sp">
+            </Button>
 
             <Button
                 android:id="@+id/btnAplicarMovimiento"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/strAplicarMovimiento"/>
+                android:text="@string/strAplicarMovimiento"
+                android:textSize="11sp">
+            </Button>
 
         </LinearLayout>
 

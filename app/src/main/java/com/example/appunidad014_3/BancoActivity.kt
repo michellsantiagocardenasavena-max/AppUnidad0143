@@ -18,62 +18,94 @@ class BancoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
-        setContentView(R.layout.activity_cuentabanco)
+
+        setContentView(R.layout.activity_banco)
 
         iniciarComponentes()
+
         eventosClick()
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(
+            findViewById(R.id.main)
+        ) { v, insets ->
+
             val systemBars =
                 insets.getInsets(WindowInsetsCompat.Type.systemBars())
+
             v.setPadding(
                 systemBars.left,
                 systemBars.top,
                 systemBars.right,
                 systemBars.bottom
             )
+
             insets
         }
     }
 
     fun iniciarComponentes() {
-        txtUser = findViewById(R.id.txtUser)
-        txtPassword = findViewById(R.id.txtPassword)
-        btnIngresar = findViewById(R.id.btnIngresar)
+
+        txtUser =
+            findViewById(R.id.txtUser)
+
+        txtPassword =
+            findViewById(R.id.txtPassword)
+
+        btnIngresar =
+            findViewById(R.id.btnIngresar)
     }
 
     fun eventosClick() {
+
         btnIngresar.setOnClickListener {
+
             if (
                 txtUser.text.toString().contentEquals("") ||
                 txtPassword.text.toString().contentEquals("")
             ) {
+
                 Toast.makeText(
                     this,
                     R.string.strFaltaUsuario,
                     Toast.LENGTH_SHORT
                 ).show()
+
                 return@setOnClickListener
             }
 
-            val user = getString(R.string.user)
-            val pass = getString(R.string.pass)
+            val user =
+                getString(R.string.user)
+
+            val pass =
+                getString(R.string.pass)
 
             if (
                 !txtUser.text.toString().contentEquals(user) ||
                 !txtPassword.text.toString().contentEquals(pass)
             ) {
+
                 Toast.makeText(
                     this,
                     R.string.strUsuarioIncorrecto,
                     Toast.LENGTH_SHORT
                 ).show()
+
                 return@setOnClickListener
             }
 
-            val intent = Intent(this, CuentaBanco::class.java)
-            intent.putExtra("usuario", txtUser.text.toString())
+            val intent =
+                Intent(
+                    this,
+                    CuentaBancoActivity::class.java
+                )
+
+            intent.putExtra(
+                "usuario",
+                txtUser.text.toString()
+            )
+
             startActivity(intent)
         }
     }
